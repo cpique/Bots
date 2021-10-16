@@ -14,7 +14,7 @@ def getWordOfDay():
     
 
 def sendWordOfDayToSlackChannel(word='N/A', meaning='TBD'):
-    url = "https://hooks.slack.com/services/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" # TODO: Replace {0} and {1} with proper secrets
+    url = "https://hooks.slack.com/services/{0}/{1}/{2}" # TODO: Replace {0}, {1}, and {2} with proper secrets
     text =  f"Today's word is: {word}. Meaning: {meaning}."
     data = { "text": text }
     response = requests.post(url, json=data)
