@@ -13,6 +13,8 @@ namespace TelegramBot
 
         public static async Task Main(string[] args)
         {
+            Console.WriteLine($"Welcome to the Telegram Bot! Make sure you have updated the API key before using the bot.");
+
             _botClient = new TelegramBotClient(Constants.TELEGRAM_API);
             var me = await _botClient.GetMeAsync();
             Console.WriteLine($"Hi. I am {me.Id} and my name is: {me.FirstName}");

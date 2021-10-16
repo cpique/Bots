@@ -2,7 +2,7 @@
 {
     public static class Constants
     {
-        public const string TELEGRAM_API = "2073521453:AAGqRWoLkNgDZ1GSap-F0sqN_1KV9uvA-vo";
+        public const string TELEGRAM_API = "Fill with API Key"; //TODO: Fill with API Key. This key cannot be pushed to source control.
         public const string COMMAND = "/phrase";
     }
 }
